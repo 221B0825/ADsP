@@ -30,10 +30,10 @@ v1 <- c(1:6)
 v1
 
 # matrix
-m1 <- matrix(c(1:6), nrow=2)
+m1 <- matrix(c(1:6), nrow = 2)
 m1
 
-m2 <- matrix(c(1:6), ncol=2)
+m2 <- matrix(c(1:6), ncol = 2)
 m2
 
 m3 <- matrix(c(1:6), byrow = TRUE)
@@ -42,7 +42,7 @@ m3
 # 2 4 6
 
 # array
-a1 <- array(c(1:6), dim = c(2,3,2))
+a1 <- array(c(1:6), dim = c(2, 3, 2))
 a1
 
 # list : can insert any type
@@ -50,14 +50,14 @@ a1
 L <- list()
 L[[1]] <- 5
 L[[2]] <- c(1:6)
-L[[3]] <- matrix(c(1:6), nrow=2)
-L[[4]] <- array(c(1:6), dim=c(2,3,2))
+L[[3]] <- matrix(c(1:6), nrow = 2)
+L[[4]] <- array(c(1:6), dim = c(2, 3, 2))
 # print
 L
 
 # data.frame
 # similar vector, can insert different type data
-v1 <- c(1,2,3)
+v1 <- c(1, 2, 3)
 v2 <- c('a', 'b', 'c')
 df1 <- data.frame(v1, v2)
 # print
@@ -105,31 +105,31 @@ colnames(m1)
 rownames(m1)
 
 # 데이터 추출
-m1[2,2]
+m1[2, 2]
 m1[, 'c2']
 
 # dataframe 접근 : $
 df1$v1
 
 # 데이터 결합
-rbind(v1,v2)
-cbind(v1,v2)
+rbind(v1, v2)
+cbind(v1, v2)
 
 # 반복문
-for( i in 1:3)
+for (i in 1:3)
   print(i)
 
 # 조건문
 number <- 5
-if(number < 5){
+if (number < 5) {
   print('A')
 } else{
   print('B')
 }
 
 # 사용자 지정 함수
-compareTo5 <- function(number){
-  if(number < 5){
+compareTo5 <- function(number) {
+  if (number < 5) {
     print('A')
   } else{
     print('B')
